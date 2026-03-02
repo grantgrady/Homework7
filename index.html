@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7 - Food Collection Game</title>
+    <script src="libs/p5.min.js"></script>
+    <script src="js/food.js"></script>
+    <script src="js/sketch.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a1a2e;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        canvas {
+            border: 3px solid #4a4a6a;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+        .instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #16213e;
+            border-radius: 8px;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>🍎 Food Collection Game 🍪</h1>
+        <div class="instructions">
+            <p><strong>WASD</strong> to move • Collect food before time runs out</p>
+            <p>Score: <span id="score-display">0</span> • Time: 60s</p>
+        </div>
+    </div>
+</body>
+</html>
